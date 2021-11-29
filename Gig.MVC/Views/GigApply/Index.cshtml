@@ -1,0 +1,45 @@
+﻿@model IEnumerable<Gig.Models.GigApplyListItem>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.GigApplyId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GigPostId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProfileId)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.GigApplyId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GigPostId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProfileId)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.GigApplyId }) |
+            @Html.ActionLink("Details", "Detail", new { id=item.GigApplyId  }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.GigApplyId })
+        </td>
+    </tr>
+}
+
+</table>

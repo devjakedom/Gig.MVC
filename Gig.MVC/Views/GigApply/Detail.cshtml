@@ -1,0 +1,42 @@
+﻿@model Gig.Models.GigApplyDetail
+
+@{
+    ViewBag.Title = "Detail";
+}
+
+<h2>Detail</h2>
+
+<div>
+    <h4>GigApplyDetail</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.GigApplyId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GigApplyId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GigPostId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GigPostId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProfileId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProfileId)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new {  id = Model.GigApplyId  }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

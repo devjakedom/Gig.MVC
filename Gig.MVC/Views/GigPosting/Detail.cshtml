@@ -1,0 +1,58 @@
+﻿@model Gig.Models.GigPostingDetail
+
+@{
+    ViewBag.Title = "Detail";
+}
+
+<h2>Detail</h2>
+
+<div>
+    <h4>GigPostingDetail</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.GigPostId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GigPostId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.JobTitle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.JobTitle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DescriptionOfJob)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DescriptionOfJob)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Location)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Location)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PayPerHour)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PayPerHour)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.GigPostId}) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

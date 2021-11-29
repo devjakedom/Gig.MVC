@@ -1,0 +1,15 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Gig.Models
+{
+    public class GigApplyEdit
+    {
+        public int GigPostId { get; set; }
+        public int ProfileId { get; set; }
+        public int GigApplyId { get; set; }
+    }
+}
