@@ -47,6 +47,7 @@
             @Html.DisplayFor(modelItem => item.GigPostId)
         </td>
         <td>
+            @Html.ActionLink("Apply", "Create", "GigApply") |
             @Html.ActionLink("Edit", "Edit", new { id = item.GigPostId }) |
             @Html.ActionLink("Details", "Detail", new { id = item.GigPostId }) |
             @Html.ActionLink("Delete", "Delete", new { id = item.GigPostId })

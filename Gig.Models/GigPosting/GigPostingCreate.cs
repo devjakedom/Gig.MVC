@@ -11,12 +11,16 @@ namespace Gig.Models
     {
         
         [Required]
+        [Display(Name = "Job title")]
         public string JobTitle { get; set; }
         [Required]
+        [Display(Name ="Description")]
         public string DescriptionOfJob { get; set; }
         [Required]
+        [Display(Name = "Address for gig")]
         public string Location { get; set; }
         [Required]
+        [Display(Name = "Hourly Rate")]
         public int PayPerHour { get; set; }
     }
 }

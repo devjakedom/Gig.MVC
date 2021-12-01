@@ -12,10 +12,13 @@ namespace Gig.Models
         [Required]
         public string Company { get; set; }
         [Required]
+        [Display(Name = "How long did you work there? (in months/years)")]
         public string TimeWorked { get; set; }
         [Required]
+        [Display(Name = "Job title")]
         public string JobTitle { get; set; }
         [Required]
+        [Display(Name = "Description")]
         public string JobDescription { get; set; }
         [Required]
         public int ProfileId { get; set; }
